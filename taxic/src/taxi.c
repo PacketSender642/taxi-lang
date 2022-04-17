@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
             " ident : [a-zA-Z]+ ; "
             " args : <ident> (',')? ; "
             " function : <value>   (('*' | '/')   <value>)*;    "
+            " function : <value>   (('*' | '/')   <value>)*;    "
             " value : /[0-9]+/ | '(' <expression> ')';         "
             " taxi : /^/ <expression> /$/;                    ",
             Stmt, Variable, Function, TypeDef, Taxi, NULL);
