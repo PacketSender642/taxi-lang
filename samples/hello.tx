@@ -1,0 +1,7 @@
+variable unused_name is string with "Taxi"
+
+say "Hello, world"
+
+function say with txt as string that does
+
+end function
