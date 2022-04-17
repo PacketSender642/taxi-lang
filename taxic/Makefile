@@ -14,9 +14,9 @@ debug: clean all
 
 install:
 	cp bin/taxi /usr/bin/
-	cp libcodegen.so /usr/lib/
+	cp libcodegen.a /usr/lib/
 	cp src/codegen.h /usr/include/
 
 clean:
-	rm -f libcodegen.so
+	rm -f libcodegen.a
 	rm -f bin/taxi
