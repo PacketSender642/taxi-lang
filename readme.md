@@ -6,6 +6,7 @@ a "english-like" compiled language written in C
 
 Depends on the components you want, for the compiler its simple:
 ```bash
+$ 
 $ cd taxic; make
 ```
 

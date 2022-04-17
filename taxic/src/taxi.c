@@ -6,7 +6,7 @@ int main(int argc, char **argv) {
   mpc_parser_t *Stmt = mpc_new("stmt");
   mpc_parser_t *Variable = mpc_new("variable");
   mpc_parser_t *Function = mpc_new("function");
-  mpc_parser_t *TypeDef = mpc_new("maths");
+  mpc_parser_t *TypeDef = mpc_new("typedef");
 
   mpca_lang(MPCA_LANG_PREDICTIVE,
             " ident : [a-zA-Z]+ ; "
@@ -15,7 +15,6 @@ int main(int argc, char **argv) {
             " value : /[0-9]+/ | '(' <expression> ')';         "
             " taxi : /^/ <expression> /$/;                    ",
             Stmt, Variable, Function, TypeDef, Taxi, NULL);
-
 
   if (argc > 1) {
 
