@@ -6,7 +6,7 @@ a "english-like" compiled language written in C
 
 Depends on the components you want, for the compiler its simple:
 ```bash
-$ 
+$ git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
 $ cd taxic; make
 ```
 
