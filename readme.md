@@ -1,3 +1,5 @@
+![taxi emoji](https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png){:style="display:block; margin-left:auto; margin-right:auto"}
+
 # 🚖 Taxi 🚖
 
 a "english-like" compiled language written in C
