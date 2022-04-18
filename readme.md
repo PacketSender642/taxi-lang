@@ -1,9 +1,8 @@
 <p align="center">
   <img width="69" height="69" src="https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png?raw=true">
+  <h1>vroom vroom, taxi language<h1/>
 </p>
 
-
-# 🚖 Taxi 🚖
 
 a "english-like" compiled language written in C
 
