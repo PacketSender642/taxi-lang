@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="300" src="https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png?raw=true">
+  <img width="69" height="69" src="https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png?raw=true">
 </p>
 
 
