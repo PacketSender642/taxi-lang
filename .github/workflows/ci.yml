@@ -11,6 +11,11 @@ jobs:
         run: git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
       - name: Try building
         run: cd taxic; make
+      - name: Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: taxi-linux
+          path: .
   macos-build:
     runs-on: macOS-latest
     steps:
@@ -20,6 +25,11 @@ jobs:
         run: git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
       - name: Try building
         run: cd taxic; make
+      - name: Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: taxi-macos
+          path: .
   windows-build:
     runs-on: windows-2019
     env:
@@ -32,3 +42,8 @@ jobs:
         run: git clone https://github.com/orangeduck/mpc.git .\taxic\deps\mpc
       - name: Try building
         run: cd .\taxic\; make
+      - name: Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: taxi-windows
+          path: .\
