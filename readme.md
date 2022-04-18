@@ -2,7 +2,7 @@
   <img width="69" height="69" src="https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png?raw=true">
 </p>
 
-[![ci](https://github.com/PacketSender642/taxi-lang/actions/workflows/ci.yml/badge.svg)](https://github.com/PacketSender642/taxi-lang/actions/workflows/ci.yml)
+[![ci](https://github.com/PacketSender642/taxi-lang/workflows/ci/badge.svg)](https://github.com/PacketSender642/taxi-lang/workflows/ci/badge.svg)
 
 
 # Taxi
