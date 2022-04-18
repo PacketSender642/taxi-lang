@@ -20,3 +20,15 @@ jobs:
         run: git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
       - name: Try building
         run: cd taxic; make
+  windows-build:
+    runs-on: windows-2019
+    env:
+      CC: gcc
+      BUILD_ON_WINDOWS: 1
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Deps
+        run: git clone https://github.com/orangeduck/mpc.git .\taxic\deps\mpc
+      - name: Try building
+        run: cd .\taxic\; make
