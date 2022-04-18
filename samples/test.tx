@@ -1,0 +1,10 @@
+function blah with arg1 as text ->
+    call say with "h"
+    call say with "h"
+end
+function blah_2 ->
+    call say with "h"
+    call say with "h"
+end
+call say with "h"
+call blah_2
