@@ -1,6 +1,8 @@
-variable unused_name is string with "Taxi"
+define variable unused_name is string with "Taxi"
 
 say "Hello, world"
+
+define type hi as text
 
 function say with txt as string that does
 

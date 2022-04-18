@@ -1,4 +1,4 @@
-CC=tcc
+CC=cc
 CCFLAGS=-Os -s -g
 
 all:

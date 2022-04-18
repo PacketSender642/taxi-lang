@@ -1,4 +1,4 @@
-# Taxi
+# 🚖 Taxi 🚖
 
 a "english-like" compiled language written in C
 
@@ -9,6 +9,13 @@ Depends on the components you want, for the compiler its simple:
 $ git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
 $ cd taxic; make
 ```
+
+## Samples
+
+```taxi
+say "Hello, world"
+```
+More in `samples/`
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
