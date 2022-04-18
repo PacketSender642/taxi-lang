@@ -1,9 +1,13 @@
-define variable unused_name is string with "Taxi"
+variable unused_name is text with "Taxi"
 
-say "Hello, world"
-
-define type hi as text
-
-function say with txt as string that does
+function say with arg1 as string that does
 
 done
+
+function say that does
+    
+done
+
+call say with "Hello, world"
+
+type hi as text

@@ -2,11 +2,12 @@ CC?=gcc
 CCFLAGS=-Os -s -g
 
 all:
-	$(CC) $(CCFLAGS) -c src/codegen.c -Isrc/ -o libcodegen.o
-	ar rcs libcodegen.a libcodegen.o
-	@rm -rf bin
-	@mkdir bin
-	$(CC) $(CCFLAGS) src/taxi.c deps/mpc/mpc.c libcodegen.a -Ideps/ -Isrc/ -o bin/taxi
+	$(CC) $(CCFLAGS) -c src/codegen.c -Isrc/ -o libtxcodegen.o
+	$(CC) $(CCFLAGS) -fPIC -c src/parser.c -Ideps/ -Isrc/ -o libtxparser.o
+	$(CC) $(CCFLAGS) -fPIC -c deps/mpc/mpc.c -Ideps/mpc/ -Isrc/ -o libtxmpc.o
+	$(CC) $(CCFLAGS) -c src/taxi.c -L. -ltxparser -ltxcodegen -Ideps/ -Isrc/ -o taxi.o
+	$(CC) $(CCFLAGS) taxi.o libtxparser.o libtxcodegen.o libtxmpc.o -Ideps/ -Isrc/ -o taxi
+	@rm -f *.o
 	
 
 debug: clean all
@@ -14,8 +15,6 @@ debug: clean all
 
 install:
 	cp bin/taxi /usr/bin/
-	cp libcodegen.a /usr/lib/
-	cp src/codegen.h /usr/include/
 
 clean:
 	rm -f libcodegen.a
