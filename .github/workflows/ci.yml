@@ -1,0 +1,22 @@
+
+name: ci
+on: [push]
+jobs:
+  ubuntu-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Deps
+        run: git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
+      - name: Try building
+        run: cd taxic; make
+  macos-build:
+    runs-on: macOS-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Deps
+        run: git clone https://github.com/orangeduck/mpc.git taxic/deps/mpc
+      - name: Try building
+        run: cd taxic; make
