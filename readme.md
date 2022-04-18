@@ -1,4 +1,7 @@
-![taxi emoji](https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png){:style="display:block; margin-left:auto; margin-right:auto"}
+<p align="center">
+  <img width="300" height="300" src="https://github.com/PacketSender642/taxi-lang/blob/main/resources/oncoming-taxi_1f696.png?raw=true">
+</p>
+
 
 # 🚖 Taxi 🚖
 
