@@ -1,13 +1,3 @@
-variable unused_name is text with "Taxi"
-
-function say with arg1 as text that does
-
-done
-
-function say that does
-    
-done
-
-call say with "Hello, world"
-
-type hi as text
+on run { # kinda like the main function!
+    puts("Hello taxi!");
+}

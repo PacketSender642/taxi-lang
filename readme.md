@@ -7,7 +7,7 @@
 
 # Taxi
 
-a "english-like" compiled language written in C
+a event driven compiled language written in C
 
 ## Building
 
@@ -20,7 +20,9 @@ $ cd taxic; make
 ## Samples
 
 ```taxi
-say "Hello, world"
+on run { # kinda like the main function!
+    puts("Hello taxi!");
+}
 ```
 More in `samples/`
 

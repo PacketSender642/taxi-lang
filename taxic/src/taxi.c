@@ -21,17 +21,19 @@ int main(int argc, char **argv) {
       c = true;
       break;
     default:
-      fprintf(stderr, "Usage: %s [/rac] [file]\n", argv[0]);
+      fprintf(stderr, "Usage: %s [-rac] [file]\n", argv[0]);
       exit(EXIT_FAILURE);
     }
   }
   argv += optind;
 
   if (c) {
-    parse_file(argv[0]);
+    parse_file_to_c(argv[0]);
   } else if (assembly) {
     printf("Not done\n");
   }
+
+  parse_file_to_c(argv[0]);
 
   return 0;
 }
