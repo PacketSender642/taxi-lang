@@ -14,14 +14,14 @@ int parse_file(char *file) {
   mpc_err_t *err = mpca_lang(
       MPCA_LANG_PREDICTIVE,
       " ident     : /[a-zA-Z_][a-zA-Z0-9_]*/ ;\n"
-      " types : (\"text\" | \"number\"); \n"
-      " arg : (<ident> \"as\" <types>*)* | \"none\" ;\n"
+      " types : (\"text\" | \"number\" | \"none\"); \n"
+      " arg : (<ident> \"as\" <types>)* ;\n"
       " stmt : <function> | <typedef> | <variable> | <call>;                   "
       "      \n"
       " call : \"call\" <ident> \"with\" (/\"(\\\\.|[^\"])*\"/ | /[0-9]+/)*;   "
       "                      \n"
-      " function : \"function\" <ident> (\"with\" <arg>)? \"that\" \"does\" "
-      "<stmt>? \"done\";    \n"
+      " function : \"function\" <ident> (\"with\" <arg>)? \"->\" "
+      "((<stmt>)*)? \"end\";    \n"
       " typedef : \"type\" <ident> \"as\" <ident> ;\n"
       " variable : \"variable\" <ident>  \"is\" <types> \"with\" "
       "(/\"(\\\\.|[^\"])*\"/ | /[0-9]+/);\n"
