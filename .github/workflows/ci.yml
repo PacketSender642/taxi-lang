@@ -46,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: taxi-windows
-          path: .\taxic\taxi
+          path: .\taxic\taxi.exe
