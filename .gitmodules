@@ -1,0 +1,3 @@
+[submodule "taxic/deps/mpc"]
+	path = taxic/deps/mpc
+	url = https://github.com/orangeduck/mpc.git
