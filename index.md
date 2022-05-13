@@ -1,4 +1,4 @@
-## Welcome to Taxi'äs website!
+## Welcome to Taxi's website!
 
 An event driven compiled language written in C
 
