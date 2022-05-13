@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: taxi-linux
-          path: .
+          path: ./taxic/taxi
   macos-build:
     runs-on: macOS-latest
     steps:
@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: taxi-macos
-          path: .
+          path: ./taxic/taxi
   windows-build:
     runs-on: windows-2019
     env:
@@ -46,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: taxi-windows
-          path: .\
+          path: .\taxic\taxi
